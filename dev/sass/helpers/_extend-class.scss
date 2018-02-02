@@ -1,0 +1,18 @@
+@each $name , $color in $colors {
+	$c : $color;
+	.background-#{$name} {
+    	background-color: $c; 
+	}
+	.text-#{$name} {
+	    color: $c;
+	}
+}
+.list-style-none {
+	@extend %list-style-none;
+}
+.hidden {
+	display: none;
+}
+.no-border {
+	@extend %border-none;
+}

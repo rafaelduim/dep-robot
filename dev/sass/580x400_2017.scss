@@ -1,0 +1,125 @@
+
+// Vars
+@import '_vars';
+@import '_colours';
+
+/*!
+* DEP ROBOT v 1.25
+* Copyright 2017 By RafaelDuim [rafaelduim.com.br].
+* Productor: Rafael Duim [rafaelduim.com.br]
+* Developer - HTML/CSS: RafaelDuim
+*/
+
+// Helpers
+$style-theme: true;
+@import 'helpers/_mixin';
+@import 'helpers/_extends';
+@import 'helpers/_extend-class';
+@import 'helpers/_text';
+@import 'helpers/_spacing';
+@import 'helpers/_sprites';
+
+
+$width : 580px;
+$height : 400px;
+
+
+@import '_all';
+
+
+body[cliente="cobramseg-2018"] {
+    .banner {
+        background-image: url(https://cdn.depassaporte.com.br/banners/imagens/banners/580x400/clientes/banner-cobramseg-2018.jpg) !important;
+        * {
+            @extend %position-relative;
+        }
+        .banner-imagem {
+            height: 93px
+        }
+        label {
+            color: #FFF;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .banner-form {
+            @extend %position-relative;
+            height: 297px;
+            .banner-grupo {
+                margin-bottom: 7px
+            }
+            input[type="text"],
+            select {
+                border: 1px
+            }
+            .banner-botao {
+                width: 204px;
+                margin-left: 170px;
+                margin-top: 12px
+            }
+            input[type="submit"] {
+                background: #ff6f37 !important;
+                width: 204px;
+                height: 47px;
+                margin: 0;
+                color: #FFF;
+                text-indent: 0;
+                text-transform: uppercase;
+                font-size: 22px;
+                line-height: 45px;
+                font-weight: bold;
+                border-radius: 5px
+            }
+        }
+    }
+}
+
+body[cliente="cobramseg-2018"] .banner .banner-form .icone {
+    width: 20px;
+    height: 27px
+}
+
+body[cliente="cobramseg-2018"] .banner .banner-form .banner-duracao .banner-grupo {
+    margin-left: 10px
+}
+
+body[cliente="cobramseg-2018"] .banner .banner-form .banner-ida-e-volta {
+    width: 280px;
+    margin: 11px 0 0 157px
+}
+
+body[cliente="cobramseg-2018"] .banner .banner-form .banner-ida-e-volta .marcador-fake {
+    background-image: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/marcador-fake-cidem.png);
+    height: 16px;
+    width: 16px
+}
+
+body[cliente="cobramseg-2018"] .banner .banner-form .banner-localidades .icone {
+    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-localidades-universicon.png) top center no-repeat !important
+}
+
+body[cliente="cobramseg-2018"] .banner .banner-form .banner-localidades .voltando .icone {
+    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-localidades-universicon-voltando.png) top center no-repeat !important
+}
+
+body[cliente="cobramseg-2018"] .banner .banner-form .banner-pessoas {
+    width: 350px
+}
+
+body[cliente="cobramseg-2018"] .banner .banner-form .banner-pessoas .icone.adulto {
+    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-adulto-universicon.png) top center no-repeat !important
+}
+
+body[cliente="cobramseg-2018"] .banner .banner-form .banner-pessoas .icone.crianca {
+    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-crianca-universicon.png) top center no-repeat !important
+}
+
+body[cliente="cobramseg-2018"] .banner .banner-form .banner-pessoas .icone.bebe {
+    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-bebe-universicon.png) top center no-repeat !important
+}
+
+body[cliente="cobramseg-2018"] .banner .banner-form .banner-pessoas p {
+    color: #FFF
+}
+
+
+/*# sourceMappingURL=new_580x400.css.map */

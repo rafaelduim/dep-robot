@@ -1,0 +1,170 @@
+body {
+    width: $width;
+    height: $height;
+    .banner {
+        @extend %position-relative;
+        @extend %border-none;
+        width: $width;
+        height: $height;
+
+        .banner-form {
+            @extend %float-none;
+            @extend %display-block;
+            @extend %padding-top-5;
+            @extend %padding-bottom-5;
+            @extend %padding-left-15;
+            @extend %padding-right-15;
+            @extend %full-height;
+            label {
+                @extend %text-600;
+                font-size: 15px;
+                margin-bottom: 3px;
+            }
+            input[type="text"],
+            select {
+                @extend %padding-5;
+                @include border-radius(3px);
+                font-size: 15px;
+                font-weight: 400;
+            }
+            .banner-grupo {
+                @extend %display-block;
+                @extend %float-none;
+                @extend %margin-left-30;
+                margin-bottom: 11px;
+            }
+            .icone {
+                @extend %position-absolute;
+                $size: 25px;
+                background-repeat: no-repeat;                
+                background-position: top center;
+                width: $size;
+                height: $size;
+                top: 26px;
+                left: 0;
+            }
+            .banner-ida-e-volta {
+                @extend %float-left;
+                @extend %full-width;
+                div {
+                    @extend %float-left;
+                    @extend %margin-0;
+                    @extend %margin-right-10;
+                    @extend %margin-bottom-5;
+                    label {
+                        &.ativo {
+                            & .marcador-fake {
+                                background-position: bottom center;
+                            }
+                        }
+                    }
+                }
+                input[type="radio"] {
+                    opacity: 0;
+                    margin-right: 9px;
+                }
+                .marcador-fake {
+                    @extend %position-absolute;
+                    background-repeat: no-repeat;
+                    top: 1px;
+                    left: 0;
+                    width: 19px;
+                    height: 18px;
+                }
+            }
+
+            .banner-localidades {
+                @extend %float-left;
+                width: $height;
+            }
+            .banner-duracao {
+                @extend %float-left;
+                width: 139px;
+                margin-left: 11px;
+                .left {
+                    @extend %float-left;
+                    @extend %full-width;
+                }
+            }
+            .banner-pessoas {
+                @extend %float-left;
+                width: 370px;
+                .banner-grupo {
+                    margin-bottom: 2px;
+                }
+                .left {
+                    width: 31.33333%;
+                    margin-right: 2%;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                p {
+                    color: #FFF;
+                    font-size: 12px;
+                    margin-bottom: 9px;
+                    margin: 0 !important;
+                    margin: 0 !important;
+                    text-align: right !important;
+                }
+            }
+        }
+        .banner-imagem {
+            @extend %float-none;
+            @extend %display-block;
+            @extend %full-width;
+            height: 110px;
+        }
+        
+        .banner-botao {
+            width: 169px;
+            margin-left: 11px;
+            input[type="submit"] {
+                @extend %margin-0;
+                @extend %margin-top-15;
+                background-repeat: no-repeat;
+                background-position: top center;
+                float: right !important;
+                width: 164px;
+                height: 54px;
+                background-image: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/btn-pesquisar-sbco.png);
+            }
+        }
+        
+    }
+   
+    .ui-datepicker {
+        top: 130px !important;
+        left: 202px !important;
+        width: 245px !important;
+    }
+    .ui-widget {
+        font-size: 10px;
+    }
+    .ui-autocomplete {
+        max-height: 100px;
+        max-width: 380px;
+        overflow-y: auto;
+        border-radius: 3px;
+        &.ui-menu .ui-menu-item a {
+            &:hover,
+            &:focus,
+            &.ui-state-active,
+            &.ui-state-focus {
+                background-image: none;
+                background-color: #FC2800;
+                color: #FFF;
+                border-color: #FC2800;
+            }
+        }
+    }
+}
+.link-gt5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 165px;
+    height: 49px;
+    text-indent: -9999px;
+    display: none;
+}

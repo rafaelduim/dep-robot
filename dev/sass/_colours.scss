@@ -1,0 +1,10 @@
+// COLORS
+$colors: ( 
+    'transparent': 'transparent', 
+    'white': #FFFFFF, 
+    'black': #000000,
+    'facebook': #00518f,
+    'google': #ff4b5c
+);
+$color-white: map-get($colors, 'white');
+$color-black: map-get($colors, 'black');

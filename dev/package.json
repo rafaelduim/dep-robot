@@ -1,0 +1,37 @@
+{
+  "name": "gulp-default",
+  "version": "1.1.1",
+  "description": "Compilação no css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "*"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean": "*",
+    "gulp-concat": "*",
+    "gulp-cssmin": "*",
+    "gulp-imagemin": "*",
+    "gulp-include-html": "^1.0.14",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-task-listing": "*",
+    "gulp-uglify": "*",
+    "gulp.spritesmith": "*",
+    "merge-stream": "*",
+    "vinyl-buffer": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://rafael_duim@bitbucket.org/rafael_duim/sass.git"
+  },
+  "homepage": "https://bitbucket.org/rafael_duim/sass#readme"
+}

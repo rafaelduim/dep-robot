@@ -1,0 +1,17 @@
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+
+@function hover-light($color) {
+    @return lighten($color, 10%);
+}
+
+@function hover-dark($color) {
+    @return lighten($color, 10%);
+}
