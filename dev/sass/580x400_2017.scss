@@ -1,4 +1,3 @@
-
 // Vars
 @import '_vars';
 @import '_colours';
@@ -18,26 +17,19 @@ $style-theme: true;
 @import 'helpers/_text';
 @import 'helpers/_spacing';
 @import 'helpers/_sprites';
-
-
-$width : 580px;
-$height : 400px;
-
-
+$width: 580px;
+$height: 400px;
 @import '_all';
 
-
-body[cliente="cobramseg-2018"] {
+.body {
     .banner {
-        background-image: url(https://cdn.depassaporte.com.br/banners/imagens/banners/580x400/clientes/banner-cobramseg-2018.jpg) !important;
         * {
             @extend %position-relative;
-        }
+        } 
         .banner-imagem {
             height: 93px
         }
         label {
-            color: #FFF;
             font-weight: 600;
             font-size: 13px;
         }
@@ -56,6 +48,19 @@ body[cliente="cobramseg-2018"] {
                 margin-left: 170px;
                 margin-top: 12px
             }
+        }
+    }
+}
+
+body[cliente="cobramseg-2018"] {
+    .banner {
+        background-image: url(https://cdn.depassaporte.com.br/banners/imagens/banners/580x400/clientes/banner-cobramseg-2018.jpg) !important;
+        label {
+            color: #FFF;
+        }
+        .banner-form {
+            
+            
             input[type="submit"] {
                 background: #ff6f37 !important;
                 width: 204px;
@@ -69,57 +74,120 @@ body[cliente="cobramseg-2018"] {
                 font-weight: bold;
                 border-radius: 5px
             }
+            .icone {
+                width: 20px;
+                height: 27px
+            }
+            .banner-duracao {
+                .banner-grupo {
+                    margin-left: 10px
+                }
+            }
+            .banner-ida-e-volta {
+                width: 280px;
+                margin: 11px 0 0 157px;
+                .marcador-fake {
+                    background-image: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/marcador-fake-cidem.png);
+                    height: 16px;
+                    width: 16px
+                }
+            }
+            .banner-localidades {
+                .icone {
+                    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-localidades-universicon.png) top center no-repeat !important
+                }
+                .voltando {
+                    .icone {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-localidades-universicon-voltando.png) top center no-repeat !important
+                    }
+                }
+            }
+            .banner-pessoas {
+                width: 350px;
+                .icone {
+                    &.adulto {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-adulto-universicon.png) top center no-repeat !important
+                    }
+                    &.crianca {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-crianca-universicon.png) top center no-repeat !important
+                    }
+                    &.bebe {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-bebe-universicon.png) top center no-repeat !important
+                    }
+                }
+                p {
+                    color: #FFF
+                }
+            }
         }
     }
 }
 
-body[cliente="cobramseg-2018"] .banner .banner-form .icone {
-    width: 20px;
-    height: 27px
+body[cliente="procuradores-2018"] {
+    .banner {
+        background-image: url(https://cdn.depassaporte.com.br/banners/imagens/banners/580x400/clientes/banner-procuradores-2018.jpg) !important;
+        label {
+            color: #000;
+        }
+        .banner-form {
+            input[type="submit"] {
+                background: #0072bc !important;
+                width: 204px;
+                height: 47px;
+                margin: 0;
+                color: #FFF;
+                text-indent: 0;
+                text-transform: uppercase;
+                font-size: 22px;
+                line-height: 45px;
+                font-weight: bold;
+                border-radius: 5px
+            }
+            .icone {
+                width: 20px;
+                height: 27px
+            }
+            .banner-duracao {
+                .banner-grupo {
+                    margin-left: 10px
+                }
+            }
+            .banner-ida-e-volta {
+                width: 280px;
+                margin: 11px 0 0 157px;
+                .marcador-fake {
+                    background-image: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/marcador-fake-cidem.png);
+                    height: 16px;
+                    width: 16px
+                }
+            }
+            .banner-localidades {
+                .icone {
+                    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-localidades-preto.png) top center no-repeat !important
+                }
+                .voltando {
+                    .icone {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-localidades-preto-voltando.png) top center no-repeat !important
+                    }
+                }
+            }
+            .banner-pessoas {
+                width: 350px;
+                .icone {
+                    &.adulto {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-adulto-preto.png) top center no-repeat !important
+                    }
+                    &.crianca {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-crianca-preto.png) top center no-repeat !important
+                    }
+                    &.bebe {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-bebe-preto.png) top center no-repeat !important
+                    }
+                }
+                p {
+                    color: #000
+                }
+            }
+        }
+    }
 }
-
-body[cliente="cobramseg-2018"] .banner .banner-form .banner-duracao .banner-grupo {
-    margin-left: 10px
-}
-
-body[cliente="cobramseg-2018"] .banner .banner-form .banner-ida-e-volta {
-    width: 280px;
-    margin: 11px 0 0 157px
-}
-
-body[cliente="cobramseg-2018"] .banner .banner-form .banner-ida-e-volta .marcador-fake {
-    background-image: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/marcador-fake-cidem.png);
-    height: 16px;
-    width: 16px
-}
-
-body[cliente="cobramseg-2018"] .banner .banner-form .banner-localidades .icone {
-    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-localidades-universicon.png) top center no-repeat !important
-}
-
-body[cliente="cobramseg-2018"] .banner .banner-form .banner-localidades .voltando .icone {
-    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-localidades-universicon-voltando.png) top center no-repeat !important
-}
-
-body[cliente="cobramseg-2018"] .banner .banner-form .banner-pessoas {
-    width: 350px
-}
-
-body[cliente="cobramseg-2018"] .banner .banner-form .banner-pessoas .icone.adulto {
-    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-adulto-universicon.png) top center no-repeat !important
-}
-
-body[cliente="cobramseg-2018"] .banner .banner-form .banner-pessoas .icone.crianca {
-    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-crianca-universicon.png) top center no-repeat !important
-}
-
-body[cliente="cobramseg-2018"] .banner .banner-form .banner-pessoas .icone.bebe {
-    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-bebe-universicon.png) top center no-repeat !important
-}
-
-body[cliente="cobramseg-2018"] .banner .banner-form .banner-pessoas p {
-    color: #FFF
-}
-
-
-/*# sourceMappingURL=new_580x400.css.map */
