@@ -268,3 +268,72 @@ body[cliente="defesa-agropecuaria-2018"] {
         }
     }
 }
+
+body[cliente="cioba-2018"] {
+    .banner {
+        background-image: url(https://cdn.depassaporte.com.br/banners/imagens/banners/580x400/clientes/banner-cioba-2018.jpg) !important;
+        label {
+            color: #FFF;
+        }
+        .banner-form {
+            input[type="submit"] {
+                background: #b81715 !important;
+                width: 204px;
+                height: 47px;
+                margin: 0;
+                color: #FFF;
+                text-indent: 0;
+                text-transform: uppercase;
+                font-size: 22px;
+                line-height: 45px;
+                font-weight: bold;
+                border-radius: 5px
+            }
+            .icone {
+                width: 20px;
+                height: 27px
+            }
+            .banner-duracao {
+                .banner-grupo {
+                    margin-left: 10px
+                }
+            }
+            .banner-ida-e-volta {
+                width: 280px;
+                margin: 11px 0 0 157px;
+                .marcador-fake {
+                    background-image: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/marcador-fake-cidem.png);
+                    height: 16px;
+                    width: 16px
+                }
+            }
+            .banner-localidades {
+                .icone {
+                    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-localidades-branco.png) top center no-repeat !important
+                }
+                .voltando {
+                    .icone {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-localidades-branco-voltando.png) top center no-repeat !important
+                    }
+                }
+            }
+            .banner-pessoas {
+                width: 350px;
+                .icone {
+                    &.adulto {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-adulto-branco.png) top center no-repeat !important
+                    }
+                    &.crianca {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-crianca-branco.png) top center no-repeat !important
+                    }
+                    &.bebe {
+                        background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/ico-bebe-branco.png) top center no-repeat !important
+                    }
+                }
+                p {
+                    color: #FFF
+                }
+            }
+        }
+    }
+}
