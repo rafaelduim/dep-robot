@@ -179,8 +179,12 @@
 
         if (url == '' || url == null)
             url = window.parent.location.host;
-        $("#formDisponibilidade").attr('action', 'https://compras.depassaporte.com.br/Flight/Loading' + '?' + 'utm_source=' + url + '&utm_medium=CPC&utm_campaign=' + url + '_Voos&url=' + document.referrer);
+        // $("#formDisponibilidade").attr('action', 'https://compras.depassaporte.com.br/Flight/Loading' + '?' + 'utm_source=' + url + '&utm_medium=CPC&utm_campaign=' + url + '_Voos&url=' + document.referrer);
+        $("#formDisponibilidade").attr('action', 'https://compras.depassaporte.com.br/Flight/Loading' + '?' + 'url=' + document.referrer);
+        
         $("#formDisponibilidade").attr('target', '_blank');
+
+
         //}
         // ativar input radio
         // ativar input radio

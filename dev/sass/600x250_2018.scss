@@ -1,0 +1,209 @@
+// Vars
+@import '_vars';
+@import '_colours';
+
+/*!
+* DEP ROBOT v 1.25
+* Copyright 2017 By RafaelDuim [rafaelduim.com.br].
+* Productor: Rafael Duim [rafaelduim.com.br]
+* Developer - HTML/CSS: RafaelDuim
+*/
+
+// Helpers
+$style-theme: true;
+@import 'helpers/_mixin';
+@import 'helpers/_extends';
+@import 'helpers/_extend-class';
+@import 'helpers/_text';
+@import 'helpers/_spacing';
+@import 'helpers/_sprites';
+$width: 600px;
+$height: 250px;
+@import '_all';
+
+body {
+    $w-img : 0;
+    // $w-img : 600px;
+    .ui-datepicker {
+        &.ui-widget {
+            top: 10px !important;
+        }
+    }
+    .banner {
+        background: url(https://cdn.depassaporte.com.br/banners/imagens/banners/600x250/clientes/banner-sp-boat-show-2018.png) center center no-repeat !important;
+        background-size: cover;
+        * {
+            @extend %position-relative;
+        } 
+        .banner-imagem {
+            @extend %margin-0;
+            float: right !important;
+            height: $height !important;
+            width: ($w-img - 10px);
+        }
+        .banner-form {
+            @extend %margin-0;
+            @extend %position-relative;
+            padding: 5px;
+            float: left !important;
+            height: ($height - 10px);
+            width: ($width - $w-img - 10px);
+            .box-left {
+                @extend %float-left;
+                width: 250px;
+                padding: 0 20px;
+                .banner-localidades ,
+                .banner-duracao {
+                    @extend %full-width;
+                    @extend %margin-0;
+                }
+                .banner-duracao {
+                    .left {
+                        @extend %float-left;
+                        width: 45%;
+                    }
+                    .right {
+                        @extend %float-right;
+                        width: 45%;
+                    }
+                    .banner-grupo {
+                        margin-left: 0;
+                        input {
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+            .box-right {
+                @extend %float-right;
+                padding: 0 20px;
+                width: 250px;
+                .banner-pessoas {
+                    @extend %full-width;
+                    select {
+                        @extend %text-center;
+                    }
+                    .left {
+                        @extend %float-left;
+                        width: 32%;
+                        margin-right: 2%;
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                    // .right {
+                    //     @extend %float-right;
+                    //     width: 45%;
+                    // }
+                }
+                .banner-botao {
+                    @extend %margin-0;
+                    @extend %full-width;
+                    .btn-pesquisar {
+                        @extend %margin-0;
+                        @extend %full-width;
+                    }
+                }
+            }
+            .box-form {
+                @extend %display-block;
+                label {
+                    @extend %display-block;
+                    float: none;
+                }
+                .banner-grupo {
+                    @extend %display-block;
+                    @extend %position-relative;
+                    margin: 0 0 5px;
+                    background: #FFF;
+                    padding-left: 25px;
+                    .icone {
+                        @extend %position-absolute;
+                        left: 2px;
+                        top: 3px;
+                    }
+                }
+            }
+            .banner-grupo {
+                margin-bottom: 7px;
+            }
+            label {
+                text-transform: none;
+                font-weight: 400;
+                font-size: 11px;
+                color: #FFF;
+            }
+            input[type="text"],
+            select {
+                @extend %border-none;
+                font-size: 11px;
+                background: #FFF; 
+                padding: 8px 5px;
+                border-radius: 8px;
+            }
+            .banner-ida-e-volta {
+                margin: 27px 0 11px 80px;
+            }
+            .banner-botao {
+                width: 550px;
+                margin: 0 20px;
+            }
+        }
+    }
+
+    .ui-helper-hidden-accessible {
+        display: none;
+    }
+}
+body[cliente="boat-show"] {
+    .banner {
+        background: #d6af31;
+        .banner-localidades {
+            .icone {
+                background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-localidades-novo-preto.png) top center no-repeat !important
+            }
+            .voltando {
+                .icone {
+                    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-localidades-novo-preto-voltando.png) top center no-repeat !important
+                }
+            }
+        }
+        .banner-ida-e-volta {
+            @extend %full-width;
+            .marcador-fake {
+                top: 2px;
+                background-image: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/marcador-fake-cidem.png);
+                height: 16px;
+                width: 16px
+            }
+        }
+        .banner-pessoas {
+            .icone {
+                &.adulto {
+                    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-adulto-novo-preto.png) top center no-repeat !important
+                }
+                &.crianca {
+                    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-crianca-novo-preto.png) top center no-repeat !important
+                }
+                &.bebe {
+                    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-bebe-novo-preto.png) top center no-repeat !important
+                }
+            }
+        }
+        .banner-botao {
+            margin-top: 15px !important;
+            .btn-pesquisar {
+                width: 100%;
+                background:url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-busca-branco.png) 225px 13px no-repeat #CF1F61!important;
+                height: 40px;
+                margin: 0;
+                color: #FFF;
+                text-indent: 0;
+                font-size: 14px;
+                line-height: 40px;
+                font-weight: 600;
+                border-radius: 8px;
+            }
+        }
+    }
+}

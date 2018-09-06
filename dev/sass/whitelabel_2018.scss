@@ -1,0 +1,195 @@
+// Vars
+@import '_vars';
+@import '_colours';
+
+/*!
+* DEP ROBOT v 1.25
+* Copyright 2017 By RafaelDuim [rafaelduim.com.br].
+* Productor: Rafael Duim [rafaelduim.com.br]
+* Developer - HTML/CSS: RafaelDuim
+*/
+
+// Helpers
+$style-theme: true;
+@import 'helpers/_mixin';
+@import 'helpers/_extends';
+@import 'helpers/_extend-class';
+@import 'helpers/_text';
+@import 'helpers/_spacing';
+@import 'helpers/_sprites';
+$width: 960px;
+$height: 175px;
+@import '_all';
+
+body {
+    $w-img : 600px;
+    .ui-datepicker {
+        &.ui-widget {
+            top: 10px !important;
+        }
+    }
+    .banner {
+        * {
+            @extend %position-relative;
+        } 
+        .banner-imagem {
+            @extend %margin-0;
+            float: right !important;
+            height: $height !important;
+            width: ($w-img - 10px);
+            background: url(https://cdn.depassaporte.com.br/banners/imagens/banners/960x175/clientes/banner-dep-2018.png) center center no-repeat !important
+        }
+        .banner-form {
+            @extend %margin-0;
+            @extend %position-relative;
+            padding: 5px;
+            float: left !important;
+            height: ($height - 10px);
+            width: ($width - $w-img);
+            .box-left {
+                @extend %float-left;
+                width: 55%;
+                .banner-localidades ,
+                .banner-duracao {
+                    @extend %full-width;
+                    @extend %margin-0;
+                }
+                .banner-duracao {
+                    .left {
+                        @extend %float-left;
+                        width: 45%;
+                    }
+                    .right {
+                        @extend %float-right;
+                        width: 45%;
+                    }
+                    .banner-grupo {
+                        margin-left: 0;
+                        input {
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+            .box-right {
+                @extend %float-right;
+                width: 40%;
+                .banner-pessoas {
+                    @extend %full-width;
+                    select {
+                        @extend %text-center;
+                    }
+                    .left {
+                        @extend %float-left;
+                        width: 45%;
+                    }
+                    .right {
+                        @extend %float-right;
+                        width: 45%;
+                    }
+                }
+                .banner-botao {
+                    @extend %margin-0;
+                    @extend %full-width;
+                    .btn-pesquisar {
+                        @extend %margin-0;
+                        @extend %full-width;
+                    }
+                }
+            }
+            .box-form {
+                @extend %display-block;
+                label {
+                    @extend %display-block;
+                    float: none;
+                }
+                .banner-grupo {
+                    @extend %display-block;
+                    @extend %position-relative;
+                    margin: 0 0 5px;
+                    background: #FFF;
+                    padding-left: 25px;
+                    .icone {
+                        @extend %position-absolute;
+                        left: 2px;
+                        top: 3px;
+                    }
+                }
+            }
+            .banner-grupo {
+                margin-bottom: 7px;
+            }
+            label {
+                text-transform: none;
+                font-weight: 400;
+                font-size: 9px;
+            }
+            input[type="text"],
+            select {
+                @extend %border-none;
+                font-size: 10px;
+                background: #FFF; 
+                padding: 8px 5px;
+            }
+            .banner-botao {
+                width: 204px;
+                margin-left: 170px;
+                margin-top: 12px
+            }
+        }
+    }
+
+    .ui-helper-hidden-accessible {
+        display: none;
+    }
+}
+body[cliente="dep"] {
+    .banner {
+        background: #d6af31;
+        .banner-localidades {
+            .icone {
+                background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-localidades-novo-preto.png) top center no-repeat !important
+            }
+            .voltando {
+                .icone {
+                    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-localidades-novo-preto-voltando.png) top center no-repeat !important
+                }
+            }
+        }
+        .banner-ida-e-volta {
+            @extend %full-width;
+            .marcador-fake {
+                top: 2px;
+                background-image: url(https://cdn.depassaporte.com.br/banners/imagens/icones/580x400/clientes/marcador-fake-cidem.png);
+                height: 16px;
+                width: 16px
+            }
+        }
+        .banner-pessoas {
+            .icone {
+                &.adulto {
+                    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-adulto-novo-preto.png) top center no-repeat !important
+                }
+                &.crianca {
+                    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-crianca-novo-preto.png) top center no-repeat !important
+                }
+                &.bebe {
+                    background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-bebe-novo-preto.png) top center no-repeat !important
+                }
+            }
+        }
+        .banner-botao {
+            margin-top: 15px !important;
+            .btn-pesquisar {
+                background: url(https://cdn.depassaporte.com.br/banners/imagens/icones/960x175/clientes/ico-busca-branco.png) 10px 8px no-repeat #004a80 !important;
+                height: 30px;
+                margin: 0;
+                color: #FFF;
+                text-indent: 0;
+                font-size: 12px;
+                line-height: 30px;
+                border-radius: 2px
+            }
+        }
+    }
+}

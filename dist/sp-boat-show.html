@@ -19,12 +19,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 </head>
 
-<body class="novopadrao robo-2015 vermelho" data-largura="580" data-altura="400" cliente="cioba-2018">
-    <!-- <link href="assets/css/580x400_2017.min.css" rel="stylesheet" /> -->
-    <link href="http://cdn.depassaporte.com.br/banners/css/formatos/580x400_2017.min.css" rel="stylesheet" /> 
+<body class="novopadrao robo-2015 vermelho" data-largura="600" data-altura="250" cliente="boat-show">
+    <!-- <link href="assets/css/600x250_2018.min.css" rel="stylesheet" /> -->
+    <link href="http://cdn.depassaporte.com.br/banners/css/formatos/600x250_2018.min.css" rel="stylesheet" /> 
 <!-- .banner -->
 <div class="banner" data-largura="580" data-altura="400">
-    <div class="banner-imagem clearfix"></div>
     <form id="formDisponibilidade" class="banner-form" method="post">
         <!-- .banner-ida-e-volta -->
         <div class="banner-ida-e-volta clearfix">
@@ -43,102 +42,118 @@
             </div>
         </div>
         <!-- /.banner-ida-e-volta -->
-        <!-- .banner-localidades -->
-        <div class="banner-localidades">
-            <div class="clearfix">
-                <span class="icone"></span>
-                <div class="banner-grupo">
-                    <label for="FormData_Origem">Saindo de:</label>
-                    <input class="ocAutoComplete campolongo" id="FormData_Origem" name="FormData.Origem" placeholder="Cidade ou Aeroporto" required="required" type="text" value="" />
+        <div class="box-left">
+            <!-- .banner-localidades -->
+            <div class="banner-localidades">
+                <div class="clearfix">
+                    <div class="box-form">
+                        <label for="FormData_Origem">Origem:</label>
+                        <div class="banner-grupo">
+                            <span class="icone"></span>
+                            <input class="ocAutoComplete campolongo" id="FormData_Origem" name="FormData.Origem" placeholder="Cidade ou Aeroporto" required="required" type="text" value="" />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="clearfix voltando">
-                <span class="icone"></span>
-                <div class="banner-grupo">
-                    <label for="FormData_Destino">Indo para:</label>
-                    <input class="ocAutoComplete campolongo" id="FormData_Destino" name="FormData.Destino" placeholder="Cidade ou Aeroporto" required="required" type="text" value="" />
+            <!-- /.banner-localidades -->
+            <!-- .banner-duracao -->
+            <div class="banner-duracao">
+                <div class="left">
+                    <div class="banner-grupo">
+                        <label for="FormData_DataIda">Partida:</label>
+                        <input class="ocAutoComplete campodata" id="FormData_DataIda" name="FormData.DataIda" placeholder="dd/mm/aaaa" type="text" required="required" value="" />
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="banner-grupo">
+                        <label for="FormData_DataVolta">Retorno:</label>
+                        <input class="ocAutoComplete campodata" id="FormData_DataVolta" name="FormData.DataVolta" placeholder="dd/mm/aaaa" type="text" required="required" value="" />
+                    </div>
                 </div>
             </div>
+            <!-- /.banner-duracao -->
         </div>
-        <!-- /.banner-localidades -->
-        <!-- .banner-duracao -->
-        <div class="banner-duracao">
-            <div class="left">
-                <span class="icone"></span>
-                <div class="banner-grupo">
-                    <label for="FormData_DataIda">Partida:</label>
-                    <input class="ocAutoComplete campodata" id="FormData_DataIda" name="FormData.DataIda" placeholder="dd/mm/aaaa" type="text" required="required" value="" />
+        <div class="box-right">
+            <!-- .banner-localidades -->
+            <div class="banner-localidades">
+                <div class="clearfix voltando">
+                    <div class="box-form">
+                        <label for="FormData_Destino">Destino:</label>
+                        <div class="banner-grupo">
+                            <span class="icone"></span>
+                            <input class="ocAutoComplete campolongo" id="FormData_Destino" name="FormData.Destino" placeholder="Cidade ou Aeroporto" required="required" type="text" value="" />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="left">
-                <span class="icone"></span>
-                <div class="banner-grupo">
-                    <label for="FormData_DataVolta">Retorno:</label>
-                    <input class="ocAutoComplete campodata" id="FormData_DataVolta" name="FormData.DataVolta" placeholder="dd/mm/aaaa" type="text" required="required" value="" />
+            <!-- /.banner-localidades -->
+            <!-- .banner-pessoas -->
+            <div class="banner-pessoas">
+                <div class="left">
+                    <div class="box-form">
+                        <label for="FormData_Adultos">Adultos:</label>
+                        <div class="banner-grupo">
+                            <span class="icone adulto"></span>
+                            <select class="select" id="FormData_Adultos" name="FormData.Adultos">
+                                <option value="1" selected="selected">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="left">
+                    <div class="box-form">
+                        <label for="FormData_Criancas">Criança:</label>
+                        <div class="banner-grupo">  
+                            <span class="icone crianca"></span>                      
+                            <select class="select" id="FormData_Criancas" name="FormData.Criancas">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="left">
+                    <div class="box-form">
+                        <label for="FormData_Bebes">Bebê:</label>
+                        <div class="banner-grupo">
+                            <span class="icone bebe"></span>
+                            <select class="select" id="FormData_Bebes" name="FormData.Bebes">
+                                <option selected="selected" value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- /.banner-pessoas -->
         </div>
-        <!-- /.banner-duracao -->
-        <!-- .banner-pessoas -->
-        <div class="banner-pessoas">
-            <div class="left">
-                <span class="icone adulto"></span>
-                <div class="banner-grupo">
-                    <label for="FormData_Adultos">Adultos:</label>
-                    <select class="select" id="FormData_Adultos" name="FormData.Adultos">
-                        <option value="1" selected="selected">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                    </select>
-                </div>
-                <p>(12+ anos)</p>
-            </div>
-            <div class="left">
-                <span class="icone crianca"></span>
-                <div class="banner-grupo">
-                    <label for="FormData_Criancas">Criança:</label>
-                    <select class="select" id="FormData_Criancas" name="FormData.Criancas">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                    </select>
-                </div>
-                <p>(2 a 11 anos)</p>
-            </div>
-            <div class="left">
-                <span class="icone bebe"></span>
-                <div class="banner-grupo">
-                    <label for="FormData_Bebes">Bebê:</label>
-                    <select class="select" id="FormData_Bebes" name="FormData.Bebes">
-                        <option selected="selected" value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                    </select>
-                </div>
-                <p>(0 a 23meses)</p>
-            </div>
-        </div>
-        <!-- /.banner-pessoas -->
         <!-- .banner-botao -->
         <div class="banner-botao">
-            <input class="btn-pesquisar" type="button" value="Pesquisar" id="btnPesquisarAereo">
+            <input class="btn-pesquisar" type="button" value="Buscar" id="btnPesquisarAereo">
         </div>
         <!-- /.banner-botao -->
     </form>
+    <!-- <div class="banner-imagem"></div> -->
 </div><!-- BANNER B2C INICIO HEADER - COPIAR ESTE TRECHO NO HEADER DO CONTAINER -->
 <!--referenciando o compras-->
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
