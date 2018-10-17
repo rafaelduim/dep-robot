@@ -1,0 +1,59 @@
+$style-theme : false;
+// Vars
+@import '_vars';
+@import '_colours';
+@import '../tools/node_modules/bootstrap/scss/bootstrap-reboot';
+@import '../tools/node_modules/bootstrap/scss/bootstrap-grid';
+@import '../tools/node_modules/bootstrap/scss/bootstrap';
+
+/*!
+* Duim SASS
+* Copyright 2017 By RafaelDuim [rafaelduim.com.br].
+* Client: DePassaporte
+* Productor: Rafael Duim [rafaelduim.com.br]
+* Developer - HTML/CSS/JS: RafaelDuim
+*/
+
+// Helpers
+
+
+
+@import 'helpers/_mixin';
+@import 'helpers/_extends';
+@import 'helpers/_extend-class';
+@import 'helpers/_text';
+@import 'helpers/_spacing';
+@import 'helpers/_sprites';
+@import 'components/animate/_animate';
+
+
+// HTML
+html {
+    @extend %display-flex;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    @extend %display-flex;
+    @extend %full-width;
+    @extend %margin-0;
+    @extend %text-400;
+    // @extend .background-black;
+    min-height: 100%;
+    font-family: $font-family !important;
+    font-size: $font-size-default;
+    overflow-x: hidden;
+    // @include media-to(xs) {
+    //     font-size: $font-size-default-xs;
+    // }
+    @media print {
+        font-size: 10px;
+    }
+}

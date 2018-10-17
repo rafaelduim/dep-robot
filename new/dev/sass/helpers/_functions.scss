@@ -1,0 +1,41 @@
+@function color($key) {
+    @if map-has-key($colors, $key) {
+        @return map-get($colors, $key);
+    }
+    @warn "Unknown `#{$key}` in $colors.";
+    @return null;
+}
+
+@function hover-light($color) {
+    @return lighten($color, 10%);
+}
+
+@function hover-dark($color) {
+    @return lighten($color, 10%);
+}
+
+//== Map Get Deep
+// Given a map and a list of keys, find the value at the given key
+@function array-get($map, $keys...) {
+    @if length($keys)==1 {
+        $keys: nth($keys, 1);
+    }
+    $warn: "#{nth($keys, 1)}";
+    $length: length($keys);
+    $get: map-get($map, nth($keys, 1));
+    @if $length>1 {
+        @for $i from 2 through $length {
+            @if $get !=null and type-of($get)=='map' {
+                $warn: $warn+"->#{nth($keys, $i)}";
+                $get: map-get($get, nth($keys, $i));
+                @if $get==null {
+                    @return null;
+                }
+            }
+            @else {
+                @return array-get-warning($warn, $get, nth($keys, $i));
+            }
+        }
+    }
+    @return $get;
+}

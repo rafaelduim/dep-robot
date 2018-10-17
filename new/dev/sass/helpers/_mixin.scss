@@ -1,0 +1,183 @@
+@mixin border-radius( $radius: 3px) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
+
+@mixin background-position ($position...) {
+    background-position: $position;
+}
+
+@mixin background-color ($color) {
+    background-color: $color;
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    // IE8 filter
+    $opacity-ie: ($opacity * 100);
+    filter: alpha(opacity=$opacity-ie);
+}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+    box-shadow: $shadow;
+}
+
+@mixin pad ($pads...) {
+    padding: $pads;
+}
+
+@mixin marg ($margs...) {
+    margin: $margs;
+}
+
+// FUNCTIONS
+
+@mixin border($size:1px,$type:'solid',$color:''){
+    border: $size #{$type} $color;
+}
+@mixin border-top($size:1px,$type:'solid',$color:''){
+    border-top: $size #{$type} $color;
+}
+@mixin border-bottom($size:1px,$type:'solid',$color:''){
+    border-bottom: $size #{$type} $color;
+}
+@mixin border-left($size:1px,$type:'solid',$color:''){
+    border-left: $size #{$type} $color;
+}
+@mixin border-right($size:1px,$type:'solid',$color:''){
+    border-right: $size #{$type} $color;
+}
+@mixin create_button($name , $bg , $color ) {
+    &.button-#{$name} {
+        $colorBG :  map-get($colors, $bg);
+        $colorText: map-get($colors, $color);
+        @include border(1px,'solid',$colorBG);
+        color: $colorText;
+        background: $colorBG;
+        &:hover,
+        &:focus,
+        &.active {
+            color: $colorText !important;
+            background: lighten($colorBG,15%) !important;
+            border-color: lighten($colorBG,15%) !important;
+        }
+        &.button-outline {
+            @include border(1px,'solid',$colorBG);
+            background: transparent;
+            color: $colorBG;
+            &:hover,
+            &:focus,
+            &.active {
+                color: $colorText !important;
+                background: lighten($colorBG,15%) !important;
+                border-color: lighten($colorBG,15%) !important;
+            }
+        }
+
+        &.button-line {
+            @extend %text-uppercase;
+            @extend %text-300;
+            @extend .hvr-underline-from-center;
+            @include border(1px,'solid', transparent);
+            color: $colorText;
+            background: none;
+            &:hover,
+            &:focus,
+            &.active {
+                border-color: transparent !important;
+                background: none !important;
+                // border-bottom-color: $colorBG !important;
+                &::before {
+                    width: 100% !important;
+                    left: 0 !important;
+                }
+            }
+            &::before {
+                height: 2px !important;
+            }
+        }
+    }
+}
+
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
+
+//== Media Query - Desktop Mode
+$layout-breakpoints: (
+  	// Small screen / phone
+  	sm: 576px,
+  	
+  	// Medium screen / tablet
+  	md: 768px,
+  	
+  	// Large screen / desktop
+  	lg: 992px,
+  	
+  	// Extra large screen / wide desktop
+  	xl: 1200px,
+
+    // Extra large screen / wide desktop
+    xxl: 1400px,
+
+    // Super Extra large screen / wide desktop
+    xxxl: 1600px
+)!default;
+
+@mixin desktop {
+    @media (min-width: #{map-get($layout-breakpoints, lg)}) {
+      @content;
+    }
+}
+
+//== Media Query - Desktop & Tablet Modes
+@mixin desktop-and-tablet {
+    @media (min-width: #{map-get($layout-breakpoints, md)}) {
+      @content;
+    }
+}
+
+//== Media Query - Tablet Mode
+@mixin tablet {
+    @media (min-width: #{map-get($layout-breakpoints, md)}) and (max-width: #{map-get($layout-breakpoints, lg)}) {
+      @content;
+    }
+}
+
+//== Media Query - Tablet & Mobile Modes
+@mixin tablet-and-mobile {
+    @media (max-width: #{map-get($layout-breakpoints, lg)}) {
+      @content;
+    }
+}
+
+//== Media Query - Mobile Mode
+@mixin mobile {
+    @media (max-width: #{map-get($layout-breakpoints, md)}) {
+      @content;
+    }
+} 
+
+//== IE8-11 versions hack
+@mixin hack-ie8-11 {
+  @media screen\0 {
+      @content;
+  }
+}
+
+//== Edge All versions hack
+@mixin hack-edge-all {
+  @supports (-ms-ime-align:auto) {
+      @content;
+  }
+}

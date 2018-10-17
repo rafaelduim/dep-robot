@@ -1,0 +1,189 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$ico-adulto-branco-name: 'ico-adulto-branco';
+$ico-adulto-branco-x: 0px;
+$ico-adulto-branco-y: 0px;
+$ico-adulto-branco-offset-x: 0px;
+$ico-adulto-branco-offset-y: 0px;
+$ico-adulto-branco-width: 25px;
+$ico-adulto-branco-height: 24px;
+$ico-adulto-branco-total-width: 106px;
+$ico-adulto-branco-total-height: 76px;
+$ico-adulto-branco-image: '../images/sprite/sprite.png';
+$ico-adulto-branco: (0px, 0px, 0px, 0px, 25px, 24px, 106px, 76px, '../images/sprite/sprite.png', 'ico-adulto-branco', );
+$ico-adulto-preto-name: 'ico-adulto-preto';
+$ico-adulto-preto-x: 27px;
+$ico-adulto-preto-y: 0px;
+$ico-adulto-preto-offset-x: -27px;
+$ico-adulto-preto-offset-y: 0px;
+$ico-adulto-preto-width: 25px;
+$ico-adulto-preto-height: 24px;
+$ico-adulto-preto-total-width: 106px;
+$ico-adulto-preto-total-height: 76px;
+$ico-adulto-preto-image: '../images/sprite/sprite.png';
+$ico-adulto-preto: (27px, 0px, -27px, 0px, 25px, 24px, 106px, 76px, '../images/sprite/sprite.png', 'ico-adulto-preto', );
+$ico-bebe-branco-name: 'ico-bebe-branco';
+$ico-bebe-branco-x: 0px;
+$ico-bebe-branco-y: 26px;
+$ico-bebe-branco-offset-x: 0px;
+$ico-bebe-branco-offset-y: -26px;
+$ico-bebe-branco-width: 25px;
+$ico-bebe-branco-height: 24px;
+$ico-bebe-branco-total-width: 106px;
+$ico-bebe-branco-total-height: 76px;
+$ico-bebe-branco-image: '../images/sprite/sprite.png';
+$ico-bebe-branco: (0px, 26px, 0px, -26px, 25px, 24px, 106px, 76px, '../images/sprite/sprite.png', 'ico-bebe-branco', );
+$ico-bebe-preto-name: 'ico-bebe-preto';
+$ico-bebe-preto-x: 27px;
+$ico-bebe-preto-y: 26px;
+$ico-bebe-preto-offset-x: -27px;
+$ico-bebe-preto-offset-y: -26px;
+$ico-bebe-preto-width: 25px;
+$ico-bebe-preto-height: 24px;
+$ico-bebe-preto-total-width: 106px;
+$ico-bebe-preto-total-height: 76px;
+$ico-bebe-preto-image: '../images/sprite/sprite.png';
+$ico-bebe-preto: (27px, 26px, -27px, -26px, 25px, 24px, 106px, 76px, '../images/sprite/sprite.png', 'ico-bebe-preto', );
+$ico-crianca-branco-name: 'ico-crianca-branco';
+$ico-crianca-branco-x: 54px;
+$ico-crianca-branco-y: 0px;
+$ico-crianca-branco-offset-x: -54px;
+$ico-crianca-branco-offset-y: 0px;
+$ico-crianca-branco-width: 25px;
+$ico-crianca-branco-height: 24px;
+$ico-crianca-branco-total-width: 106px;
+$ico-crianca-branco-total-height: 76px;
+$ico-crianca-branco-image: '../images/sprite/sprite.png';
+$ico-crianca-branco: (54px, 0px, -54px, 0px, 25px, 24px, 106px, 76px, '../images/sprite/sprite.png', 'ico-crianca-branco', );
+$ico-crianca-preto-name: 'ico-crianca-preto';
+$ico-crianca-preto-x: 54px;
+$ico-crianca-preto-y: 26px;
+$ico-crianca-preto-offset-x: -54px;
+$ico-crianca-preto-offset-y: -26px;
+$ico-crianca-preto-width: 25px;
+$ico-crianca-preto-height: 24px;
+$ico-crianca-preto-total-width: 106px;
+$ico-crianca-preto-total-height: 76px;
+$ico-crianca-preto-image: '../images/sprite/sprite.png';
+$ico-crianca-preto: (54px, 26px, -54px, -26px, 25px, 24px, 106px, 76px, '../images/sprite/sprite.png', 'ico-crianca-preto', );
+$ico-localidades-branco-voltando-name: 'ico-localidades-branco-voltando';
+$ico-localidades-branco-voltando-x: 0px;
+$ico-localidades-branco-voltando-y: 52px;
+$ico-localidades-branco-voltando-offset-x: 0px;
+$ico-localidades-branco-voltando-offset-y: -52px;
+$ico-localidades-branco-voltando-width: 25px;
+$ico-localidades-branco-voltando-height: 24px;
+$ico-localidades-branco-voltando-total-width: 106px;
+$ico-localidades-branco-voltando-total-height: 76px;
+$ico-localidades-branco-voltando-image: '../images/sprite/sprite.png';
+$ico-localidades-branco-voltando: (0px, 52px, 0px, -52px, 25px, 24px, 106px, 76px, '../images/sprite/sprite.png', 'ico-localidades-branco-voltando', );
+$ico-localidades-branco-name: 'ico-localidades-branco';
+$ico-localidades-branco-x: 27px;
+$ico-localidades-branco-y: 52px;
+$ico-localidades-branco-offset-x: -27px;
+$ico-localidades-branco-offset-y: -52px;
+$ico-localidades-branco-width: 25px;
+$ico-localidades-branco-height: 24px;
+$ico-localidades-branco-total-width: 106px;
+$ico-localidades-branco-total-height: 76px;
+$ico-localidades-branco-image: '../images/sprite/sprite.png';
+$ico-localidades-branco: (27px, 52px, -27px, -52px, 25px, 24px, 106px, 76px, '../images/sprite/sprite.png', 'ico-localidades-branco', );
+$ico-localidades-preto-voltando-name: 'ico-localidades-preto-voltando';
+$ico-localidades-preto-voltando-x: 54px;
+$ico-localidades-preto-voltando-y: 52px;
+$ico-localidades-preto-voltando-offset-x: -54px;
+$ico-localidades-preto-voltando-offset-y: -52px;
+$ico-localidades-preto-voltando-width: 25px;
+$ico-localidades-preto-voltando-height: 24px;
+$ico-localidades-preto-voltando-total-width: 106px;
+$ico-localidades-preto-voltando-total-height: 76px;
+$ico-localidades-preto-voltando-image: '../images/sprite/sprite.png';
+$ico-localidades-preto-voltando: (54px, 52px, -54px, -52px, 25px, 24px, 106px, 76px, '../images/sprite/sprite.png', 'ico-localidades-preto-voltando', );
+$ico-localidades-preto-name: 'ico-localidades-preto';
+$ico-localidades-preto-x: 81px;
+$ico-localidades-preto-y: 0px;
+$ico-localidades-preto-offset-x: -81px;
+$ico-localidades-preto-offset-y: 0px;
+$ico-localidades-preto-width: 25px;
+$ico-localidades-preto-height: 24px;
+$ico-localidades-preto-total-width: 106px;
+$ico-localidades-preto-total-height: 76px;
+$ico-localidades-preto-image: '../images/sprite/sprite.png';
+$ico-localidades-preto: (81px, 0px, -81px, 0px, 25px, 24px, 106px, 76px, '../images/sprite/sprite.png', 'ico-localidades-preto', );
+$spritesheet-width: 106px;
+$spritesheet-height: 76px;
+$spritesheet-image: '../images/sprite/sprite.png';
+$spritesheet-sprites: ($ico-adulto-branco, $ico-adulto-preto, $ico-bebe-branco, $ico-bebe-preto, $ico-crianca-branco, $ico-crianca-preto, $ico-localidades-branco-voltando, $ico-localidades-branco, $ico-localidades-preto-voltando, $ico-localidades-preto, );
+$spritesheet: (106px, 76px, '../images/sprite/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

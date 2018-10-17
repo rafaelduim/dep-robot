@@ -1,0 +1,54 @@
+&[cliente="higienista-2018-580x400"] {
+    background-image: url(#{$image-url}/banner-higienista-2018-580x400.jpg);
+    label,
+    p {
+        @extend .font-white;
+    }
+    .icone {
+        &.ida {
+            &:before {
+                @include sprite($ico-localidades-branco);
+                margin-top: - ($ico-localidades-branco-height/2);
+                margin-left: - ($ico-localidades-branco-width/2);
+            }
+        }
+        &.volta {
+            &:before {
+                @include sprite($ico-localidades-branco-voltando);
+                margin-top: - ($ico-localidades-branco-voltando-height/2);
+                margin-left: - ($ico-localidades-branco-voltando-width/2);
+            }
+        }
+        &.adulto {
+            &:before {
+                @include sprite($ico-adulto-branco);
+                margin-top: - ($ico-adulto-branco-height/2);
+                margin-left: - ($ico-adulto-branco-width/2);
+            }
+        }
+        &.crianca {
+            &:before {
+                @include sprite($ico-crianca-branco);
+                margin-top: - ($ico-crianca-branco-height/2);
+                margin-left: - ($ico-crianca-branco-width/2);
+            }
+        }
+        &.bebe {
+            &:before {
+                @include sprite($ico-bebe-branco);
+                margin-top: - ($ico-bebe-branco-height/2);
+                margin-left: - ($ico-bebe-branco-width/2);
+            }
+        }
+    }
+    input {
+        &[type=submit],
+        &[type=button] {
+            @extend .font-white;
+            background-color: #9e0b0f;
+            &:hover {
+                background-color: #bc4649;
+            }
+        }
+    }
+}

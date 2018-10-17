@@ -1,0 +1,46 @@
+// Vars
+$style-theme : true;
+@import '../tools/node_modules/bootstrap/scss/_functions.scss';
+@import '../tools/node_modules/bootstrap/scss/_variables.scss';
+@import '../tools/node_modules/bootstrap/scss/_mixins.scss';
+@import '_vars';
+@import '_colours';
+
+// Helpers
+
+
+
+
+@import 'helpers/_mixin';
+@import 'helpers/_extends';
+@import 'helpers/_extend-class';
+@import 'helpers/_text';
+@import 'helpers/_spacing';
+@import 'helpers/_sprites';
+@import 'helpers/_functions';
+
+// HTML
+body {
+    @extend %center;
+    @extend %position-relative;
+    main {
+        @extend %display-flex;
+        @extend %flex-direction-column;
+        @extend %full-width;
+        @extend %overflow-hidden;
+        @extend %position-relative;
+        @import 'layout/580x400/580x400';
+    }
+    &[data-largura="580"] {
+        max-width: 580px;
+    }
+    &[data-altura="400"] {
+        max-height: 400px;
+        .buscador {
+            height: 400px;
+        }
+    }
+    // ALL
+    @import '_all';
+
+}

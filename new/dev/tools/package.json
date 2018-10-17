@@ -1,0 +1,37 @@
+{
+  "name": "gulp-default",
+  "version": "1.1.1",
+  "description": "Compilação no css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "*",
+    "gulp": "*",
+    "html5-boilerplate": "*",
+    "require-dir": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean": "*",
+    "gulp-concat": "*",
+    "gulp-concat-css": "*",
+    "gulp-cssmin": "*",
+    "gulp-imagemin": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-task-listing": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp.spritesmith": "*",
+    "merge-stream": "*",
+    "vinyl-buffer": "*",
+    "gulp-include-html": "^1.0.14"
+  }
+}

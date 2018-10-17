@@ -1,0 +1,65 @@
+// GERAL
+@each $m in (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200) {
+    %padding-#{$m} {
+        padding: #{$m}px;
+    }
+    @if $style-theme {
+        .padding-#{$m} {
+            padding: #{$m}px !important;
+        }
+    }
+}
+
+// TOP
+// GERAL
+@each $m in (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200) {
+    %padding-top-#{$m} {
+        padding-top: #{$m}px;
+    }
+    @if $style-theme {
+        .padding-top-#{$m} {
+            padding-top: #{$m}px !important;
+        }
+    }
+}
+
+// ENDTOM
+// BOTTOM
+@each $m in (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200) {
+    %padding-bottom-#{$m} {
+        padding-bottom: #{$m}px;
+    }
+    @if $style-theme {
+        .padding-bottom-#{$m} {
+            padding-bottom: #{$m}px !important;
+        }
+    }
+}
+
+// ENDBOTTOM
+// LEFT
+@each $m in (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200) {
+    %padding-left-#{$m} {
+        padding-left: #{$m}px;
+    }
+    @if $style-theme {
+        .padding-left-#{$m} {
+            padding-left: #{$m}px !important;
+        }
+    }
+}
+
+// ENDLEFT
+// RIGHT
+@each $m in (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200) {
+    %padding-right-#{$m} {
+        padding-right: #{$m}px;
+    }
+    @if $style-theme {
+        .padding-right-#{$m} {
+            padding-right: #{$m}px !important;
+        }
+    }
+}
+
+// ENDRIGHT

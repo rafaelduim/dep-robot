@@ -1,0 +1,20 @@
+{
+    "config" : {
+        "image_css": "../images/sprite/",
+        "dist": {
+            "base": "./../../dist",
+            "css" : "./../../dist/assets/css",
+            "images" : "./../../dist/assets/images"
+        },
+        "dev":{
+            "base": "./../",
+            "scss": "./../sass",
+            "images": "./../images",
+            "html": "./../html"
+        },
+        "names": {
+            "sprite": "sprite.png",
+            "sprite_scss": "_sprites.scss"
+        }
+    }
+}
