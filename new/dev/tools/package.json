@@ -1,6 +1,6 @@
 {
-  "name": "gulp-default",
-  "version": "1.1.1",
+  "name": "psn-sass",
+  "version": "2.0.0",
   "description": "Compilação no css",
   "main": "index.js",
   "scripts": {
@@ -10,29 +10,30 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "*",
-    "gulp": "^3.9.1",
+    "gulp": "*",
+    "gulp-include-html": "^1.0.14",
     "html5-boilerplate": "*",
+    "jquery": "*",
     "natives": "^1.1.6",
     "require-dir": "^1.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-clean": "*",
-    "gulp-concat": "*",
-    "gulp-concat-css": "*",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
     "gulp-cssmin": "*",
     "gulp-imagemin": "*",
     "gulp-plumber": "*",
     "gulp-rename": "*",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "4.0.2",
     "gulp-sourcemaps": "*",
     "gulp-task-listing": "*",
     "gulp-uglify": "*",
-    "gulp-util": "*",
+    "gulp-util": "^3.0.8",
     "gulp.spritesmith": "*",
     "merge-stream": "*",
-    "vinyl-buffer": "*",
-    "gulp-include-html": "^1.0.14"
+    "vinyl-buffer": "*"
   }
 }
